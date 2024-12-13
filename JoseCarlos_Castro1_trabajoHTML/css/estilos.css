@@ -1,0 +1,544 @@
+/*  estilos de pagina, general  */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F0EF;
+}
+
+section {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+h2 {
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    font-size: 1em;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+h1 {
+    letter-spacing: -0.3rem;
+    font-size: 6.4em;
+    line-height: 6.6rem;
+}
+
+hr {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+/*     INDEX     */
+/*  HEADER Y MENU  */
+
+header {
+    display: flex;
+    align-items: center;
+    height: 5em;
+    background-color: #212121;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.menucaja {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.logo {
+    width: 205px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #F2F0EF;
+}
+
+nav a:hover {
+    background-color: #F2F0EF;
+    color: #212121
+}
+
+nav a.vista {
+    background-color: #8A8988;
+    color: #212121;
+}
+
+nav a.vista:hover {
+    background-color: #F2F0EF;
+    color: #212121
+}
+
+header p {
+    width: 205px;
+    flex-grow: 1;
+    color: #F2F0EF;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+/*   HERO   */
+
+.principal {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+
+/*  caja imagen  */
+
+.principal-imagen {
+    display: flex;
+    justify-content: center;
+    margin-right: 2em;
+    flex: 60%;
+}
+
+.principal-imagen img {
+    max-width: 100%;
+    min-width: 40em;
+    height: auto;
+}
+
+/*  caja contenido  */
+
+.principal-contenido {
+    color: #212121;
+    display: flex;
+    flex: 40%;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.principal-contenido h2 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.principal-contenido div {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+}
+
+.principal-contenido p {
+    margin: 0;
+    max-width: 20em;
+    font-size: 1em;
+    line-height: 1.5rem;
+    border-left: 0.1em solid #212121;
+    padding-left: 2em;
+}
+
+/*  SECCION 1  */
+
+.seccion1 {
+    height: 70vh;
+    max-width: 100%;
+    background-color: #212121;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  imagenes  */
+
+.seccion1 img {
+    display: flex;
+}
+
+/*  main y video  */
+
+.contenedor-seccion1 {
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.contenedor-seccion1 div:not(.contenedor-video) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #F2F0EF;
+    margin-bottom: 1.3em;
+}
+
+.contenedor-seccion1 video {
+    border: solid #F2F0EF;
+
+}
+
+/*  SECCION 2  */
+
+.seccion2 {
+    height: 90vh;
+    max-width: 100%;
+    display: flex;
+    color: #212121;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*  caja tipografia  */
+
+.tipo-sec2 {
+    display: flex;
+    padding: 3%;
+}
+
+/*  contenedor  */
+
+.contenido-sec2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 3%;
+}
+
+.contenido-sec2-2 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.contenido-sec2-2 img {
+    width: 400px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.contenido-sec2-2 div:nth-child(2) {
+    width: 400px;
+}
+
+.contenido-sec2 p {
+    font-size: 0.8em;
+    line-height: 1.5;
+}
+
+/*  SECCION 3  */
+
+.seccion3 {
+    position: relative;
+    color: #F2F0EF;
+    height: 90vh;
+    background-image: url(./../images/banda.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    text-align: center;
+}
+
+.seccion3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    opacity: 0.4;
+}
+
+.seccion3 h1 {
+    position: relative;
+}
+
+.albumes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    position: relative;
+}
+
+.albumes div {
+    padding: 2%;
+    background-color: #212121;
+}
+
+.albumes h3 {
+    margin-top: 5%;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+
+/*  FOOTER  */
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorfooter {
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    font-size: .8em;
+    line-height: 1.5rem;
+    background-color: #212121;
+    color: #F2F0EF;
+}
+
+.containerderecha {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-left: 5%;
+}
+
+footer h2 {
+    color: #8A8988;
+
+}
+
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer1 ul {
+    list-style: none;
+}
+
+.footer1 ul li {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 3%;
+}
+
+.footer1 ul li a img {
+    max-height: 25px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.footer2 {
+    display: flex;
+    gap: 10em
+}
+
+.footer2 a {
+    text-decoration: none;
+    color: #8A8988;
+}
+
+/*     PRODUCTOS     */
+/* SECCION 1 ALBUMES */
+
+.galeria {
+    color: #212121;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.titulogaleria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeriacaja {
+    display: flex;
+    padding: 5% 0%;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeriacaja div {
+    font-size: small;
+    line-height: 1.5;
+}
+
+.galeriacaja div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galeriacaja div:nth-child(2) {
+    max-width: 900px;
+}
+
+.galeriacaja ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    list-style-position: inside;
+}
+
+.galeriacaja img {
+    border-radius: 33px;
+    border: solid 16px #212121;
+}
+
+/*  SECCION 2 PRODUCTOS  */
+
+.galeriaproductos div {
+    display: flex;
+    color: #212121;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeriaproductos img {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
+
+/*     PRESUPUESTO     */
+
+.presupuesto {
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    color: #212121;
+    height: 100%;
+}
+
+.presupuestocontenedor {
+    display: flex;
+    gap: 33px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.presupuestotitulo {
+    padding-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presupuestotitulo h1 {
+    width: 70vw;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.presupuestoimg {
+    display: flex;
+    justify-content: center;
+}
+
+/* formulario */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+}
+
+.formulario h2 {
+    line-height: 1.5;
+    padding-bottom: 3%;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-top: 8px;
+}
+
+.formulario input {
+    margin-bottom: 8px;
+}
+
+.formulario button {
+    background-color: #212121;
+    color: #F2F0EF;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px 30px;
+    width: 100px;
+}
+
+.formulario button:hover {
+    background-color: #8A8988;
+    color: #212121;
+}
+
+/*     CONTACTO     */
+
+.contacto {
+    color: #212121;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.contactobox1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contactobox1 h2 {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.contactobox2 {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contactobox2 p {
+    margin-bottom: 8px;
+}
+
+.contactobox2 h3 {
+    margin-top: 8px;
+}
+
+
+.contactobox2 div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 550px;
+}
+
+.contactobox2 div:nth-child(2) a {
+    text-decoration: none;
+    color: #8A8988;
+}

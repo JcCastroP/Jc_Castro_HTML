@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>presupuesto</title>
+    <link rel="stylesheet" href=".././css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+
+        <!--contenedor principal menu-->
+
+        <div class="menucaja">
+            <div class="logo">
+                <a href=".././index.html">
+                    <img src=".././images/WhiteLogo.svg" alt="Logo Pomodoro" height="41" width="60">
+                </a>
+            </div>
+
+            <!--MENU-->
+
+            <nav>
+                <ul>
+                    <li><a href="./productos.html">PRODUCTOS</a></li>
+                    <li><a href="./presupuesto.html" class="vista">PRESUPUESTO</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div>
+                <p>POMODORO</p>
+            </div>
+        </div>
+    </header>
+
+    <!--SECCION PRESUPUESTO-->
+
+    <section class="presupuesto">
+
+        <div class="presupuestotitulo">
+            <h1>¿Quieres que POMODORO llene tu evento de energía y ritmo?</h1>
+        </div>
+        <div class="presupuestocontenedor">
+            <div class="presupuestoimg">
+                <img src=".././images/guitarman.png" alt="hombre de pelo largo con guitarra cantando">
+            </div>
+
+            <!--caja formulario-->
+
+            <div class="formulario">
+
+                <!--texto-->
+
+                <h2>¡Estamos encantados de recibir tu solicitud! Completa el formulario a continuación y nos pondremos
+                    en
+                    contacto contigo para brindarte más detalles sobre cómo podemos hacer que tu evento sea inolvidable.
+                </h2>
+
+                <!--formulario-->
+
+                <form action="formulario.php" method="post">
+
+                    <!--nombre-->
+
+                    <label for="nombre"><b>Nombre:</b></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre Apellido"
+                        title="Ejemplo: Nombre Apellido" pattern="[a-zA-ZÁÉÍÓÚáéíóúÑñ]+" required>
+
+                    <!--email-->
+
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" id="email" name="email" placeholder="nombre@servicio.com"
+                        title="Ejemplo: nombre@servicio.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                        required>
+
+                    <!--telefono-->
+
+                    <label for="telefono"><b>Móvil:</b></label>
+                    <input type="tel" id="movil" name="movil" placeholder="123-45-67-89"
+                        title="Ejemplo: 123-45-67-89" pattern="\d{3}-\d{2}-\d{2}-\d{2}" required>
+
+                    <!--mas informacion-->
+
+                    <label for="informacion"><b>Solicite más información:</b></label>
+                    <textarea id="informacion" name="informacion" rows="5" cols="50" required></textarea>
+
+                    <!--politica de privacidad-->
+
+                    <label>
+                        Al enviar este formulario, acepto
+                        los
+                        términos y condiciones y la política de privacidad, autorizando el uso de mis datos
+                        únicamente
+                        para
+                        gestionar mi solicitud según lo descrito en las políticas del sitio.<input type="checkbox"
+                            name="politica" value="si" required>
+                    </label>
+
+                    <button type="submit">Enviar</button>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+
+    <footer>
+
+
+        <div class="contenedorfooter">
+
+            <!--caja logo-->
+
+            <div>
+                <img src=".././images/WhiteLogo.svg" alt="Logo Pomodoro" height="133">
+                <div>
+                    <p>© 2024 Pomodoro.<br>Todos los derechos reservados.</p>
+                </div>
+            </div>
+
+            <!-- contenedor-->
+
+            <div class="containerderecha">
+
+                <div class="footer1">
+
+                    <!--links a redes-->
+
+                    <div>
+                        <h2>Síguenos en redes sociales</h2>
+                        <ul>
+                            <li>
+                                <a href="https://es-es.facebook.com/">
+                                    <img src=".././images/003-facebook.png" alt="logo de facebook" height="25">
+                                </a>
+                                <p>Facebook</p>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/">
+                                    <img src=".././images/002-instagram.png" alt="logo de instagram" height="25">
+                                </a>
+                                <p>Instagram</p>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/">
+                                    <img src=".././images/001-youtube.png" alt="logo de youTube" height="25">
+                                </a>
+                                <p>YouTube</p>
+                            </li>
+                            <li>
+                                <a href="https://open.spotify.com/intl-es">
+                                    <img src=".././images/004-spotify.png" alt="logo de spotify" height="25">
+                                </a>
+                                <p>Spotify</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--seccion datos-->
+
+                    <div>
+                        <ul>
+                            <li>Términos y Condiciones</li>
+                            <li>Política de Privacidad</li>
+                            <li>Aviso Legal</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Este sitio web y su contenido están protegidos por las leyes de derechos de autor.<br>
+                            Para consultas de prensa, contrataciones o colaboraciones, contáctanos en:</p>
+                        <ul>
+                            <li>contacto@pomodoro.com</li>
+                            <li>+34 123 456 789</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer2">
+                    <div>
+                        <h2>Conciertos y eventos:</h2>
+                        <p>¿Quieres que POMODORO llene tu evento de energía y ritmo?
+                        </p>
+                        <a href=".././views/presupuesto.html">Envía tu solicitud</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>
